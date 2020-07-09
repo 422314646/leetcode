@@ -1,3 +1,5 @@
+package sparseArray;
+
 import java.io.*;
 
 /*稀疏二维数组*/
