@@ -117,12 +117,26 @@ public class SparseArray {
             System.out.println();
             System.out.println("还原后的稀疏二维数组：");
             for (int i = 0; i < sparseArr1.length; i++){
-                System.out.printf("%d\t%d\t%d\t\n", sparseArr[i][0], sparseArr[i][1], sparseArr[i][2]);
+                System.out.printf("%d\t%d\t%d\t\n", sparseArr1[i][0], sparseArr1[i][1], sparseArr1[i][2]);
+            }
+
+            //稀疏数组还原二维数组
+            int[][] chessArr3 = new int[sparseArr1[0][0]][sparseArr1[0][1]];
+            for (int i = 1; i < sparseArr1.length; i++){
+                chessArr3[sparseArr1[i][0]][sparseArr1[i][1]] = sparseArr1[i][2];
+            }
+            for (int[] row: chessArr3){
+                for (int data: row){
+                    System.out.printf("%d\t", data);
+                }
+                System.out.println();
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 
 
