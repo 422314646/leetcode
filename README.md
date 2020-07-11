@@ -6,7 +6,7 @@
 
 [第54题：螺旋矩阵，给定一个包含 m x n 个元素的矩阵（m 行, n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。(2020.7.10)](https://github.com/422314646/leetcode/blob/master/project/src/Solution54.java)
 
-[第59题：螺旋矩阵 II，给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。(2020.7.11)]()
+[第59题：螺旋矩阵 II，给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。(2020.7.11)](https://github.com/422314646/leetcode/blob/master/project/src/Solution59.java)
 
 # **DataStructure**
 [1.稀疏数组](https://blog.csdn.net/weixin_45706249/article/details/107219990)
