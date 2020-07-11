@@ -15,4 +15,8 @@
 
 [2.2 队列（数组队列模拟环形队列）](https://blog.csdn.net/weixin_45706249/article/details/107245250)
 
-[3.1 链表（单链表）](https://blog.csdn.net/weixin_45706249/article/details/107279756)
+[3.1 链表（单链表插入顺序添加）](https://blog.csdn.net/weixin_45706249/article/details/107279756)
+
+[3.2 链表 (单链表编号顺序添加)](https://blog.csdn.net/weixin_45706249/article/details/107291751)
+
+[3.3 链表 (单链表修改，删除)](https://blog.csdn.net/weixin_45706249/article/details/107292362)
