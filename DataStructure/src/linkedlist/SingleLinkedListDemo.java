@@ -1,5 +1,7 @@
 package linkedlist;
 
+import java.util.Stack;
+
 public class SingleLinkedListDemo {
     public static void main(String[] args) {
         HeroNode heroNode1 = new HeroNode(1, "小白", "xiaobai");
@@ -14,7 +16,14 @@ public class SingleLinkedListDemo {
         singleLinkedList.add(heroNode2);
         singleLinkedList.add(heroNode3);
         singleLinkedList.add(heroNode4);
+        System.out.println("反转前");
         singleLinkedList.list();
+        System.out.println("逆序打印链表");
+        reversePrint(singleLinkedList.getHead());
+        reverseList(singleLinkedList.getHead());
+        System.out.println("反转后");
+        singleLinkedList.list();
+        System.out.println("=====================================");
         System.out.println(getLength(singleLinkedList.getHead()));
         System.out.println("=====================================");
         singleLinkedList1.addByOrder(heroNode2);
@@ -34,6 +43,63 @@ public class SingleLinkedListDemo {
         HeroNode res1 = findLastIndexNode1(singleLinkedList1.getHead(),2);
         System.out.println("res1="+res1);
 
+    }
+
+    //合并两个有序链表，合并之后链表依然有序
+    public static void mergeList(HeroNode head1, HeroNode head2){
+
+        HeroNode cur = head1.next;
+        HeroNode cur1 = head2.next;
+        HeroNode newHerNOde = new HeroNode(0," "," ");
+        HeroNode temp = newHerNOde;
+        while (cur != null && cur1 != null){
+            if (cur.no < cur1.no){
+                temp.next = cur;
+                cur = cur.next;
+            }else {
+                temp.next = cur1;
+                cur1 = cur1.next;
+            }
+            temp = temp.next;
+        }
+        temp.next = cur == null ? cur1 : cur;
+    }
+
+    //方法二：可以利用栈这个数据结构，将各个节点压入栈中，然后利用栈的先进先出特点，就实现了逆序打印的功能
+    public static void reversePrint(HeroNode head){
+        if (head.next == null){
+            System.out.println("空链表！！");
+        }
+        HeroNode cur = head.next;
+        Stack<HeroNode> stack = new Stack<HeroNode>();
+        while (cur != null){
+            stack.push(cur);
+            cur = cur.next;
+        }
+        while (stack.size() > 0){
+            System.out.println(stack.pop());
+        }
+    }
+
+    //将单链表反转
+    public static void reverseList(HeroNode head){
+        //如果当前链表为空或者只有一个节点无需反转
+        if (head.next == null || head.next.next == null){
+            return;
+        }
+        //定义一个辅助指针（变量），帮助我们遍历原来的链表
+        HeroNode cur = head.next;
+        HeroNode next = null;//指向当前节点（cur）的下一个节点
+        HeroNode reverseHead = new HeroNode(0,"","");
+        //遍历原来链表。没遍历一个节点，就将其取出，并放在新链表reverseHead的最前端
+        while (cur != null){
+            next = cur.next;//先暂时保存当前节点的下一个节点
+            cur.next = reverseHead.next;//将cur的下一个节点指向新链表的最前端
+            reverseHead.next = cur;//将cur接在新链表上
+            cur = next;//让cur后移
+        }
+        //将head.next指向reverseHead.next实现单链表的反转
+        head.next = reverseHead.next;
     }
 
     //查找链表中的倒数第k个节点（新浪面试题）
