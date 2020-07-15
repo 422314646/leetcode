@@ -34,3 +34,5 @@
 [3.4 链表 (单链表实战演练)](https://blog.csdn.net/weixin_45706249/article/details/107325952)
 
 [3.5 链表 (双向链表)](https://blog.csdn.net/weixin_45706249/article/details/107330834)
+
+[3.6 链表(环形链表，约瑟夫问题)](https://blog.csdn.net/weixin_45706249/article/details/107352270)
