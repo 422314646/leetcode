@@ -17,7 +17,7 @@
 
 [第63题：不同路径，相似第62题，加入了一个障碍物](https://github.com/422314646/leetcode/blob/master/project/src/Solution63.java)
 
-[第64题：最小路径和，度中等519收藏分享切换为英文关注反馈给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。]()
+[第64题：最小路径和，度中等519收藏分享切换为英文关注反馈给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。](https://github.com/422314646/leetcode/blob/master/project/src/Solution64.java)
 
 # **DataStructure**
 [1.稀疏数组](https://blog.csdn.net/weixin_45706249/article/details/107219990)
