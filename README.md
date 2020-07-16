@@ -12,8 +12,7 @@
 
 [第59题：螺旋矩阵 II，给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。(2020.7.11)](https://github.com/422314646/leetcode/blob/master/project/src/Solution59.java)
 
-[第62题：不同路径 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。
-问总共有多少条不同的路径？](https://github.com/422314646/leetcode/blob/master/project/src/Solution62.java)
+[第62题：不同路径 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？](https://github.com/422314646/leetcode/blob/master/project/src/Solution62.java)
 
 [第63题：不同路径，相似第62题，加入了一个障碍物](https://github.com/422314646/leetcode/blob/master/project/src/Solution63.java)
 
@@ -37,3 +36,5 @@
 [3.5 链表 (双向链表)](https://blog.csdn.net/weixin_45706249/article/details/107330834)
 
 [3.6 链表 (环形链表，约瑟夫问题)](https://blog.csdn.net/weixin_45706249/article/details/107352270)
+
+[4.1 栈 (栈的概念，数组模拟栈)](https://blog.csdn.net/weixin_45706249/article/details/107396755)
