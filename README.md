@@ -18,6 +18,8 @@
 
 [第64题：最小路径和，度中等519收藏分享切换为英文关注反馈给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。](https://github.com/422314646/leetcode/blob/master/project/src/Solution64.java)
 
+[第66题：加一，给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。]()
+
 # **DataStructure**
 [1.稀疏数组](https://blog.csdn.net/weixin_45706249/article/details/107219990)
 
