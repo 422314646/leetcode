@@ -44,3 +44,5 @@
 [4.1 栈 (栈的概念，数组模拟栈)](https://blog.csdn.net/weixin_45706249/article/details/107396755)
 
 [4.2 栈 (栈模拟一个综合计算器,中缀表达式)](https://blog.csdn.net/weixin_45706249/article/details/107420211)
+
+[4.3 栈(逆波兰式计算器分析)](https://blog.csdn.net/weixin_45706249/article/details/107471743)
