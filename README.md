@@ -20,6 +20,8 @@
 
 [第66题：加一，给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。](https://github.com/422314646/leetcode/blob/master/project/src/Solution66.java)
 
+[第69题：实现 int sqrt(int x) 函数。计算并返回 x 的平方根，其中 x 是非负整数。由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去](https://github.com/422314646/leetcode/blob/master/project/src/Solution68.java)
+
 # **DataStructure**
 [1.稀疏数组](https://blog.csdn.net/weixin_45706249/article/details/107219990)
 
