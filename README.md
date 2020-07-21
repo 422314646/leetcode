@@ -45,4 +45,6 @@
 
 [4.2 栈 (栈模拟一个综合计算器,中缀表达式)](https://blog.csdn.net/weixin_45706249/article/details/107420211)
 
-[4.3 栈(逆波兰式计算器分析)](https://blog.csdn.net/weixin_45706249/article/details/107471743)
+[4.3 栈 (逆波兰式计算器分析)](https://blog.csdn.net/weixin_45706249/article/details/107471743)
+
+[4.4 栈 (中缀表达式转后缀表达式)](https://blog.csdn.net/weixin_45706249/article/details/107480393)
