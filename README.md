@@ -52,3 +52,5 @@
 [4.4 栈 (中缀表达式转后缀表达式)](https://blog.csdn.net/weixin_45706249/article/details/107480393)
 
 [5.1 递归 (迷宫实例分析)](https://blog.csdn.net/weixin_45706249/article/details/107522414)
+
+[5.2 递归 (8皇后问题)](https://blog.csdn.net/weixin_45706249/article/details/107549781)
