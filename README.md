@@ -22,7 +22,7 @@
 
 [第69题：实现 int sqrt(int x) 函数。计算并返回 x 的平方根，其中 x 是非负整数。由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去](https://github.com/422314646/leetcode/blob/master/project/src/Solution68.java)
 
-[第73题：矩阵置零，给定一个 m x n 的矩阵，如果一个元素为 0，则将其所在行和列的所有元素都设为 0。请使用原地算法。]()
+[第73题：矩阵置零，给定一个 m x n 的矩阵，如果一个元素为 0，则将其所在行和列的所有元素都设为 0。请使用原地算法。](https://github.com/422314646/leetcode/blob/master/project/src/Solution73.java)
 
 # **DataStructure**
 [1.稀疏数组](https://blog.csdn.net/weixin_45706249/article/details/107219990)
