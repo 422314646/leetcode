@@ -58,3 +58,5 @@
 [6.1 排序 (排序基础概念，冒泡排序)](https://blog.csdn.net/weixin_45706249/article/details/107574017)
 
 [6.2 排序 (冒泡排序)](https://blog.csdn.net/weixin_45706249/article/details/107574416)
+
+[6.3 排序 (选择排序)](https://blog.csdn.net/weixin_45706249/article/details/107586842)
