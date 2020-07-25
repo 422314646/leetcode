@@ -54,3 +54,7 @@
 [5.1 递归 (迷宫实例分析)](https://blog.csdn.net/weixin_45706249/article/details/107522414)
 
 [5.2 递归 (8皇后问题)](https://blog.csdn.net/weixin_45706249/article/details/107549781)
+
+[6.1 排序 (排序基础概念，冒泡排序)](https://blog.csdn.net/weixin_45706249/article/details/107574017)
+
+[6.2 排序 (冒泡排序)](https://blog.csdn.net/weixin_45706249/article/details/107574416)
