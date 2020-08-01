@@ -64,3 +64,5 @@
 [6.2 排序 (冒泡排序)](https://blog.csdn.net/weixin_45706249/article/details/107574416)
 
 [6.3 排序 (选择排序)](https://blog.csdn.net/weixin_45706249/article/details/107586842)
+
+[6.4 排序 (插入排序)](https://blog.csdn.net/weixin_45706249/article/details/107654375)
