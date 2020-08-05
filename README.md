@@ -38,3 +38,7 @@
 [6.4 排序 (插入排序)](https://blog.csdn.net/weixin_45706249/article/details/107654375)
 
 [6.5 排序 (希尔排序)](https://blog.csdn.net/weixin_45706249/article/details/107773928)
+
+[6.6 排序 (快速排序)](https://blog.csdn.net/weixin_45706249/article/details/107827736)
+
+[6.7 排序 (归并排序)](https://blog.csdn.net/weixin_45706249/article/details/107827914)
