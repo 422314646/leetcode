@@ -6,15 +6,15 @@ import java.util.Date;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = new int[8000000];
+        /*int[] arr = new int[8000000];
         for (int i = 0; i < arr.length; i++){
             arr[i] = (int)(Math.random()*80000000);
-        }
+        }*/
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateStr = simpleDateFormat.format(date);
         System.out.println("排序前的时间=" + dateStr);
-        //int[] arr = {-9,78,0,5,0,23,-567,70};
+        int[] arr = {-7,9,10,7,8,11,12};
         quickSort(arr,0,arr.length - 1);
         Date date1 = new Date();
         String dateStr1 = simpleDateFormat.format(date1);
@@ -34,11 +34,11 @@ public class QuickSort {
                 l++;
             }
             //在pivot右边一直找，找到一个小于或者等于pivot值，才退出
-            while ( arr[r] > pivot){
+            while ( arr[r] > pivot){//进行优化的while少一次不必要的循环
                 r--;
             }
             //如果r = l 说明pivot左边的值已经全部小于pivot 右边的值已经全部大于pivot
-            if (l >= r){
+            if (l >= r){//进行优化的
                 break;
             }
             //交换

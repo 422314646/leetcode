@@ -7,9 +7,9 @@ import java.util.Date;
 public class RadixSort {
     public static void main(String[] args) {
         //int[] arr = {53,3,542,0,748,14,214};
-        int[] arr = new int[8000000];
+        int[] arr = new int[8];
         for (int i = 0; i < arr.length; i++){
-            arr[i] = (int)(Math.random()*8000000);
+            arr[i] = (int)(Math.random()*8000);
         }
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
