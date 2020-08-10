@@ -45,4 +45,6 @@
 
 [6.8 排序 (基数排序)](https://blog.csdn.net/weixin_45706249/article/details/107842077)
 
-[7.0 查找](https://blog.csdn.net/weixin_45706249/article/details/107886634)
+[7.0 查找算法](https://blog.csdn.net/weixin_45706249/article/details/107886634)
+
+[8.0 哈希表](https://blog.csdn.net/weixin_45706249/article/details/107924472)
