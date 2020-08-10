@@ -278,7 +278,7 @@ class SingleLinkedList{
 
 
 //定义HeroNde，每一个HeroNode，对象就是一个节点
-class HeroNode{
+class  HeroNode{
     public int no;
     public String name;
     public String nickname;
