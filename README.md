@@ -48,3 +48,5 @@
 [7.0 查找算法](https://blog.csdn.net/weixin_45706249/article/details/107886634)
 
 [8.0 哈希表](https://blog.csdn.net/weixin_45706249/article/details/107924472)
+
+[9.1 二叉树(前中后遍历，查找)](https://blog.csdn.net/weixin_45706249/article/details/108002710)
