@@ -94,7 +94,7 @@ class BinaryTree{
     }
 
     //后序查找
-    public TreeNode sa(int no){
+    public TreeNode postOrderSearch(int no){
         if (root != null){
             return root.postOrderSearch(no);
         } else {

@@ -50,3 +50,7 @@
 [8.0 哈希表](https://blog.csdn.net/weixin_45706249/article/details/107924472)
 
 [9.1 二叉树(前中后遍历，查找)](https://blog.csdn.net/weixin_45706249/article/details/108002710)
+
+[9.2 二叉树(删除节点)](https://blog.csdn.net/weixin_45706249/article/details/108013954)
+
+[9.3 二叉树(顺序存储二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108014075)
