@@ -54,3 +54,5 @@
 [9.2 二叉树(删除节点)](https://blog.csdn.net/weixin_45706249/article/details/108013954)
 
 [9.3 二叉树(顺序存储二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108014075)
+
+[9.4 二叉树(线索二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108033303)

@@ -17,14 +17,19 @@ public class ThreadedBinaryTreeDemo {
         node3.setLeft(node6);
 
         ThreadedBinaryTree threadedBinaryTree = new ThreadedBinaryTree();
-        threadedBinaryTree.setRoot(root);
+       /* threadedBinaryTree.setRoot(root);
         threadedBinaryTree.threadedNodes();
 
         System.out.println(node5.getLeft());
         System.out.println(node5.getRight());
         System.out.println("=============================");
-        threadedBinaryTree.threadedList();
-
+        threadedBinaryTree.threadedList();*/
+        threadedBinaryTree.setRoot(root);
+        threadedBinaryTree.preThreadNodes();
+        System.out.println(node5.getLeft());
+        System.out.println(node5.getRight());
+        System.out.println("===================");
+        threadedBinaryTree.preThreadedList();
     }
 }
 
@@ -42,6 +47,27 @@ class ThreadedBinaryTree{
 
     public void threadedNodes(){
         this.threadedNodes(root);
+    }
+
+    public void preThreadNodes(){
+        this.preThreadNodes(root);
+    }
+
+    public void postThreadOrder(){
+        this.postThreadOrder(root);
+    }
+    //遍历前序线索化二叉树的方法
+    public void preThreadedList(){
+        TreeNode treeNode = root;
+        while (treeNode != null){
+            while (treeNode.getLeftType() == 0){
+                System.out.println(treeNode);
+                treeNode = treeNode.getLeft();
+            }
+            System.out.println(treeNode);
+            treeNode = treeNode.getRight();
+        }
+
     }
 
     //遍历中序线索化二叉树的方法
@@ -67,6 +93,24 @@ class ThreadedBinaryTree{
             treeNode = treeNode.getRight();
         }
     }
+    //后序遍历线索化二叉树（不会写）
+    public void postThreadedList(){
+        TreeNode treeNode = root;
+        while (treeNode != null){
+            while (treeNode.getLeftType() == 0){
+                treeNode = treeNode.getLeft();
+            }
+            System.out.println(treeNode);
+            while (treeNode.getRightType() == 1){
+                pre = treeNode;
+                treeNode = treeNode.getRight();
+                System.out.println(treeNode);
+            }
+            treeNode = root;
+
+
+        }
+    }
 
     //前序线索化二叉树
     public void preThreadNodes(TreeNode node){
@@ -74,7 +118,23 @@ class ThreadedBinaryTree{
             return;
         }
         //线索化当前节点
-
+        if (node.getLeft() == null){
+            node.setLeft(pre);
+            node.setLeftType(1);
+        }
+        if (pre != null && pre.getRight() == null){
+            pre.setRight(node);
+            pre.setRightType(1);
+        }
+        pre = node;
+        //线索化左子树
+        if (node.getLeftType() == 0){
+            preThreadNodes(node.getLeft());
+        }
+        //线索化右子树
+        if (node.getRightType() == 0){
+            preThreadNodes(node.getRight());
+        }
     }
 
     //中序线索化
@@ -103,6 +163,31 @@ class ThreadedBinaryTree{
         pre = node;
         //(3)线索化右子树
         threadedNodes(node.getRight());
+    }
+    //后序线索二叉树
+    public void postThreadOrder(TreeNode node){
+        if (node == null){
+            return;
+        }
+        //处理左子树
+        postThreadOrder(node.getLeft());
+        //处理右子树
+        postThreadOrder(node.getRight());
+        //线索化当前节点
+        //处理当前节点的前驱节点
+        if (node.getLeft() == null){
+            //让左指针指向前驱节点
+            node.setLeft(pre);
+            //修改当前节点的左指针的类型，指向前驱节点
+            node.setLeftType(1);
+        }
+
+        //处理后继节点
+        if (pre != null && pre.getRight() == null){
+            pre.setRight(node);
+            pre.setRightType(1);
+        }
+        pre = node;
     }
 
     //删除节点
