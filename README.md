@@ -56,3 +56,5 @@
 [9.3 二叉树(顺序存储二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108014075)
 
 [9.4 二叉树(线索二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108033303)
+
+[9.5 排序 (堆排序)](https://blog.csdn.net/weixin_45706249/article/details/108083270)
