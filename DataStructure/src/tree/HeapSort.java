@@ -1,14 +1,27 @@
 package tree;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.jar.JarOutputStream;
 
 public class HeapSort {
     public static void main(String[] args) {
-        int arr[] = {7,6,8,5,9};
-        //heapSort(arr);
-        heapSort1(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] arr = new int[80000000];
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = (int)(Math.random()*80000000);
+        }
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateStr = simpleDateFormat.format(date);
+        System.out.println("排序前的时间=" + dateStr);
+        heapSort(arr);
+        Date date1 = new Date();
+        String dateStr1 = simpleDateFormat.format(date1);
+        System.out.println("排序后的时间=" + dateStr1);
+        //heapSort1(arr);
+
+        //System.out.println(Arrays.toString(arr));
     }
 
 
