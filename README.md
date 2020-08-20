@@ -58,3 +58,5 @@
 [9.4 二叉树(线索二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108033303)
 
 [9.5 排序 (堆排序)](https://blog.csdn.net/weixin_45706249/article/details/108083270)
+
+[10.1 赫夫曼树](https://blog.csdn.net/weixin_45706249/article/details/108121001)
