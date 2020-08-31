@@ -60,3 +60,5 @@
 [9.5 排序 (堆排序)](https://blog.csdn.net/weixin_45706249/article/details/108083270)
 
 [10.1 赫夫曼树](https://blog.csdn.net/weixin_45706249/article/details/108121001)
+
+[10.2 赫夫曼编码](https://blog.csdn.net/weixin_45706249/article/details/108331809)
