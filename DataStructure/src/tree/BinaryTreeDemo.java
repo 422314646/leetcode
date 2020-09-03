@@ -1,5 +1,10 @@
 package tree;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
 public class BinaryTreeDemo {
     public static void main(String[] args) {
 
@@ -14,7 +19,8 @@ public class BinaryTreeDemo {
         root.setRight(node3);
         node3.setRight(node4);
         binaryTree.setRoot(root);
-        System.out.println("前序遍历");
+        binaryTree.bfs();
+        /*System.out.println("前序遍历");
         binaryTree.preOder();
         System.out.println("========================");
         binaryTree.preOrderSearch(6);
@@ -24,7 +30,7 @@ public class BinaryTreeDemo {
         binaryTree.preOder();
         binaryTree.delNode(3);
         System.out.println("删除后，前序遍历");
-        binaryTree.preOder();
+        binaryTree.preOder();*/
     }
 
 }
@@ -72,6 +78,14 @@ class BinaryTree{
             this.root.postOrder();
         }else {
             System.out.println("二叉树为空");
+        }
+    }
+
+    public void bfs(){
+        if (this.root != null){
+            this.root.bfs();
+        } else {
+            System.out.println("空树");
         }
     }
 
@@ -208,6 +222,24 @@ class TreeNode{
         System.out.println(this);
     }
 
+    //层序遍历
+    public void bfs(){
+        Queue<TreeNode> queue = new ArrayDeque<>();
+        //List<Integer> res = new ArrayList<>();
+        queue.add(this);
+        while (!queue.isEmpty()){
+            TreeNode node = queue.poll();
+            //res.add(node.no);
+            System.out.println(node.no);
+            if (node.left != null){
+                queue.add(node.left);
+            }
+            if (node.right != null){
+                queue.add(node.right);
+            }
+        }
+    }
+
     //前序查找
     public TreeNode preOrderSearch(int no){
         if (this.no == no){
@@ -264,4 +296,6 @@ class TreeNode{
         }
         return null;
     }
+
+
 }
