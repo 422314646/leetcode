@@ -64,3 +64,5 @@
 [10.2 赫夫曼编码](https://blog.csdn.net/weixin_45706249/article/details/108331809)
 
 [11.0 二叉排序树](https://blog.csdn.net/weixin_45706249/article/details/108376906)
+
+[11.1 AVL(平衡二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108441368)
