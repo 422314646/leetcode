@@ -67,4 +67,10 @@
 
 [11.1 AVL(平衡二叉树)](https://blog.csdn.net/weixin_45706249/article/details/108441368)
 
-[12.2 图(深度优先算法，广度优先算法)]()
+[12.2 图(深度优先算法，广度优先算法)](https://editor.csdn.net/md/?articleId=108471073)
+
+[13.1 汉诺塔](https://blog.csdn.net/weixin_45706249/article/details/108504584)
+
+[14.1 动态规划](https://blog.csdn.net/weixin_45706249/article/details/108504741)
+
+[14.2 kmp](https://blog.csdn.net/weixin_45706249/article/details/108506443)

@@ -25,6 +25,23 @@ public class BinarySearch {
         }
     }
 
+    public static int binarySearch1(int[] arr, int target){
+        int left = 0;
+        int right = arr.length;
+        int mid = (left + right) / 2;
+
+        while (left <= right){
+            if (arr[mid] == target){
+                return mid;
+            } else if (arr[mid] > target) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return -1;
+    }
+
     public static List<Integer> binarySearch2(int[] arr, int left, int right, int findVal){
         if (left > right){
             return new ArrayList<>();
