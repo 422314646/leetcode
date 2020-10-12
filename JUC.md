@@ -272,7 +272,7 @@ public class NotSafeDemo {
 
 报错：java.util.ConcurrentModificationException
 
-![image-20201002100147177](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201002100147177.png)
+![image-20201002100147177](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201002100147177.png)
 
 ```java
 ArrayList，LinkedList，HashMap，HashSet//不安全
@@ -411,7 +411,7 @@ callable 接口与runnable接口的区别
 
 **3.通过Callable和FutureTask创建线程**
 
-![image-20201004145316270](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004145316270.png)
+![image-20201004145316270](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004145316270.png)
 
 ```java
 public class CallableDemo {
@@ -465,7 +465,7 @@ public class CallableDemo {
 }
 ```
 
-![image-20201004151457653](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004151457653.png)
+![image-20201004151457653](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004151457653.png)
 
 ## CountDownLatch JUC辅助类
 
@@ -484,7 +484,7 @@ private static void closeDoor() {
 }
 ```
 
-![image-20201004153716542](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004153716542.png)
+![image-20201004153716542](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004153716542.png)
 
 ```java
 CountDownLatch countDownLatch = new CountDownLatch(6);
@@ -498,7 +498,7 @@ countDownLatch.await();
 System.out.println(Thread.currentThread().getName() + "\t 班长走人关门");
 ```
 
-![image-20201004153814808](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004153814808.png)
+![image-20201004153814808](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004153814808.png)
 
 CountDownLatch主要有两个方法，当一个或者多个线程调用await方法时，这些线程会阻塞。其他线程调用**CountDown方法会将计数器减一（调用**CountDown的线程不会阻塞），当计数器的值变为0，因await方法阻塞的线程会被唤醒，继续执行
 
@@ -528,7 +528,7 @@ public static void main(String[] args) {
 }
 ```
 
-![image-20201004155138836](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004155138836.png)
+![image-20201004155138836](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004155138836.png)
 
 ## Semaphore JUC辅助类
 
@@ -564,7 +564,7 @@ public static void main(String[] args) {
 }
 ```
 
-![image-20201004161028994](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004161028994.png)
+![image-20201004161028994](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004161028994.png)
 
 ## ReentrantReadWriteLock读写锁
 
@@ -644,7 +644,7 @@ public static void main(String[] args) {
 
 ## 阻塞队列
 
-![image-20201004171026684](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004171026684.png)
+![image-20201004171026684](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004171026684.png)
 
 当队列是空的，从队列获取元素的操作将会被阻塞
 
@@ -656,15 +656,15 @@ public static void main(String[] args) {
 
 好处我们不需要关心什么时候需要阻塞线程，什么时候需要唤醒线程，因为这一切BlockingQueue都给一手包办了
 
-![image-20201004171800774](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004171800774.png)
+![image-20201004171800774](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004171800774.png)
 
-![image-20201004172405106](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004172405106.png)
+![image-20201004172405106](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004172405106.png)
 
-![image-20201004172500476](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004172500476.png)
+![image-20201004172500476](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004172500476.png)
 
-![image-20201004172526033](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201004172526033.png)
+![image-20201004172526033](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201004172526033.png)
 
-![image-20201005102019806](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201005102019806.png)
+![image-20201005102019806](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201005102019806.png)
 
 ## 线程池的优势
 
@@ -676,19 +676,19 @@ public static void main(String[] args) {
 
 提高线程的可管理性，线程是稀缺资源，如果无限制的创建，不仅会消耗系统资源，还会降低系统的稳定性，使用线程池可以进行统一的分配，调优和监控
 
-![image-20201005112348760](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201005112348760.png)
+![image-20201005112348760](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201005112348760.png)
 
 线程池的底层原理
 
-![image-20201005114119712](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201005114119712.png)
+![image-20201005114119712](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201005114119712.png)
 
 线程池源码
 
-![image-20201005114537301](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201005114537301.png)
+![image-20201005114537301](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201005114537301.png)
 
-![image-20201005114615934](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201005114615934.png)
+![image-20201005114615934](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201005114615934.png)
 
-![image-20201006092428338](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201006092428338.png)
+![image-20201006092428338](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201006092428338.png)
 
 1.在创建线程池后，开始等待请求
 
@@ -708,7 +708,7 @@ public static void main(String[] args) {
 
 **线程池不允许使用Executes去创建，而是通过ThreadPoolExecutor的方式**
 
-![image-20201006095951971](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201006095951971.png)
+![image-20201006095951971](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201006095951971.png)
 
 **AbortPolicy()**（默认）：直接抛出RejectedExecutionException异常阻止系统正常运行
 
@@ -720,7 +720,7 @@ public static void main(String[] args) {
 
 ## Java8之流式计算复习
 
-![image-20201006110223562](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201006110223562.png)
+![image-20201006110223562](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201006110223562.png)
 
 ```java
 Function<String, Integer> function = new Function<String, Integer>() {
@@ -867,13 +867,13 @@ public static void main(String[] args) throws Exception {
 
 JVM是运行在操作系统之上的，它与硬件没有直接的交互
 
-![image-20201007082015193](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201007082015193.png)
+![image-20201007082015193](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201007082015193.png)
 
 ## 类加载器Class Loader
 
 ​	负责加载class文件，**class文件在文件开头有特定的文件标示**，将class文件字节码加载到内存中，并且这些内容转化成方法区中的运行时数据结构并且ClassLoader只负责class文件的加载，至于它是否可以运行，则由Execution Engine决定
 
-![image-20201007083120109](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201007083120109.png)
+![image-20201007083120109](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201007083120109.png)
 
 虚拟机类加载器种类：
 
@@ -881,7 +881,7 @@ JVM是运行在操作系统之上的，它与硬件没有直接的交互
 
 2.用户自定义加载器 2.1 Java.lang.ClassLoader的子类，用户可以定制类的加载方式
 
-![image-20201007091215800](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201007091215800.png)
+![image-20201007091215800](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201007091215800.png)
 
 **双亲委派机制：**当一个类收到类加载请求，他首先不会尝试自己去加载这个类，而是把这个请求委派给父类去完成，每一个层次类加载器都是如此，因此所有的加载请求都因该传送到启动类加载其中，只有当父类加载器反馈自己无法完成这个请求的时候（再在它的加载路径下没有找到所需加载的class），子类加载器才会尝试自己去加载。
 
@@ -937,17 +937,17 @@ native 是一个关键字，生命有，实现无
 
 栈帧主要保存三类数据：1.**本地变量**：输入参数和输出参数以及方法内的变量 2.**栈操作**：记录出栈，入栈的操作 3.**栈帧数据**：包括类文件，方法等等
 
-![image-20201008103605303](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008103605303.png)
+![image-20201008103605303](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008103605303.png)
 
 **栈溢出：**
 
-![image-20201008104345667](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008104345667.png)
+![image-20201008104345667](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008104345667.png)
 
-![image-20201008104450004](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008104450004.png)
+![image-20201008104450004](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008104450004.png)
 
 ## 栈+堆+方法区交互关系
 
-![image-20201008104633816](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008104633816.png)
+![image-20201008104633816](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008104633816.png)
 
 ```java
 Person p1（引用类型） = new Person();
@@ -959,35 +959,35 @@ Person p1（引用类型） = new Person();
 
 新生区，养老区，永久代
 
-![image-20201008194005237](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008194005237.png)
+![image-20201008194005237](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008194005237.png)
 
 永久区（1.7）永久存储区是一个常驻内存区域，用于存放JDK自身所携带的Class，Interface的元数据，也就是说它存储的是运行环境必须的类信息，被装载进此区域的数据是不会被垃圾回收器收到的，关闭JVM才会释放此区域所占用的内存。
 
-![image-20201008195159462](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008195159462.png)
+![image-20201008195159462](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008195159462.png)
 
-![image-20201008195326267](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008195326267.png)
+![image-20201008195326267](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008195326267.png)
 
-![image-20201008200754976](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008200754976.png)
+![image-20201008200754976](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008200754976.png)
 
 MinorGC过程（复制，清空，互换）
 
 1.eden，survivorFrom复制SurvivorTo，年龄+1
 
-![image-20201008200901447](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008200901447.png)
+![image-20201008200901447](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008200901447.png)
 
 2.清空eden，survivorFrom
 
-![image-20201008200931904](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008200931904.png)
+![image-20201008200931904](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008200931904.png)
 
 3.survivorFrom和SurvivorTo互换
 
-![image-20201008203106604](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201008203106604.png)
+![image-20201008203106604](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201008203106604.png)
 
-![image-20201009110222911](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201009110222911.png)
+![image-20201009110222911](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201009110222911.png)
 
 方法区和堆一样，是各个线程共享的内存区域，它用于存储虚拟机加载的：类信息+普通常量+静态常量+编译器编译后的代码等等，虽然JVM规范将方法去描述为堆的一个逻辑部分，但它却还有一个叫非堆，目的是和堆分开
 
-![image-20201009110850287](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201009110850287.png)
+![image-20201009110850287](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201009110850287.png)
 
 heap（堆 1.7）
 
@@ -1018,19 +1018,19 @@ public class T2 {
 }
 ```
 
-![image-20201012085158536](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012085158536.png)
+![image-20201012085158536](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012085158536.png)
 
-![image-20201012085234749](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012085234749.png)
+![image-20201012085234749](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012085234749.png)
 
 内存溢出
 
 ## 垃圾回收算法
 
-![image-20201012085341793](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012085341793.png)
+![image-20201012085341793](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012085341793.png)
 
 **GC算法总体概述**
 
-![image-20201012085412368](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012085412368.png)
+![image-20201012085412368](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012085412368.png)
 
 JVM在进行GC时，并非每次都对上面三个内存区域一起回收的，大部分时候回收的都是新生代。因此GC按照回收的区域又分成两种类型，一种普通GC，一种全局GC
 
@@ -1046,21 +1046,21 @@ JVM在进行GC时，并非每次都对上面三个内存区域一起回收的，
 
 ### 1.引用计数法
 
-![image-20201012090303556](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012090303556.png)
+![image-20201012090303556](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012090303556.png)
 
 ### 2.复制算法
 
 **年轻代**中使用的是Minor GC，这种GC算法采用的是复制算法
 
-![image-20201012091518150](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012091518150.png)
+![image-20201012091518150](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012091518150.png)
 
 HotSpot JVM把年轻代分为三部分，1个Eden区和2个Survivor区（分别叫From和To）。默认比例为8：1：1，一般情况下，新创建的对象都会被分配到Eden区（一些大对象特殊处理），这些对象经过第一次Minor GC后，如果任然存活，将会被移动到Survior区，对象在Survior区每熬过一次MinorGC 年龄就会增加一岁，当它年龄增加到一定程度时，就会被移动到老年代中，因为年轻代的对象基本都是朝生夕死，所以在年轻代的垃圾回收算法使用的是复制算法，复制算法的基本思想就是内存分为两块，每次只用其中的一块，当这一块内存用完了，就将还活着的对象复制到另外一块上面。复制算法不会产生内存碎片。
 
-![image-20201012092351374](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012092351374.png)
+![image-20201012092351374](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012092351374.png)
 
-![image-20201012093008281](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012093008281.png)
+![image-20201012093008281](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012093008281.png)
 
-![image-20201012093144590](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012093144590.png)
+![image-20201012093144590](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012093144590.png)
 
 因为Eden区对象一般存活率较低，一般的，使用两块10%的内存作为空闲和活动区间，而另外80%的内存，则是用来给新建对象分配内存的，一旦发生GC，将10%的from活动区间与另外80%中存活的eden对象转移到10%的to空闲区间，接下来，将之前90%的内存全部释放。
 
@@ -1076,9 +1076,9 @@ HotSpot JVM把年轻代分为三部分，1个Eden区和2个Survivor区（分别�
 
 算法分成标记和清除两个阶段，先标记出要回收的对象，然后统一回收这些对象
 
-![image-20201012094819363](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012094819363.png)
+![image-20201012094819363](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012094819363.png)
 
-![image-20201012095136377](C:\Users\wangcheng\AppData\Roaming\Typora\typora-user-images\image-20201012095136377.png)
+![image-20201012095136377](https://github.com/422314646/leetcode/blob/master/typora-user-images/image-20201012095136377.png)
 
 标记清除，当程序运行期间，使用内存被耗尽的时候，GC线程就会被触发并将程序暂停，随后将回收的对象标记一遍，最终统一回收这些对象，完成标记清理工作接下来便让应用程序恢复运行。
 
