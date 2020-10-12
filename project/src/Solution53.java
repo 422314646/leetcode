@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Collections;
 
 /*
 * 53. 最大子序和
@@ -35,7 +37,19 @@ public class Solution53 {
 
     public static void main(String[] args) {
         Solution53 solution53 = new Solution53();
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
-        System.out.println(solution53.maxSubArray1(nums));
+        int[] nums = {-2};
+        System.out.println(solution53.maxSubArray2(nums));
+    }
+
+    //动态规划
+    private int maxSubArray2(int[] nums){
+        int length = nums.length;
+        for (int i = 1; i < length; i++) {
+            if (nums[i - 1] > 0) {
+                nums[i] = nums[i] + nums[i - 1];
+            }
+        }
+        Arrays.sort(nums);
+        return nums[length - 1];
     }
 }
